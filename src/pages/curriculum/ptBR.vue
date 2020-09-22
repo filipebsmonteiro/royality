@@ -1,6 +1,6 @@
 <template>
   <b-card class="page mt-4 mb-5 ml-auto mr-auto border-0">
-    <b-card-title>
+    <b-card-title class="d-flex align-items-end">
       <h1>Filipe Eduardo B.S. Monteiro</h1>
     </b-card-title>
 
@@ -14,7 +14,7 @@
           <ul>
             <li>PHP</li>
             <ul>
-              <li>Versões 5 e 7</li>
+              <li>5 e 7</li>
               <li>Laravel 5 a 7</li>
               <li>Symfony 2 e 4</li>
               <li>Codeigniter</li>
@@ -24,9 +24,12 @@
             <li>Frontend</li>
             <ul>
               <li>NPM e Yarn (diversos pacotes)</li>
-              <li>ECMAScript 2016/2017</li>
-              <li>Blade. Twig</li>
-              <li>HTML5, Bootstrap (CSS, SCSS, Less)</li>
+              <li>ECMAScript 2015/2016/2017</li>
+              <li>jQuery</li>
+              <li>Blade, Twig</li>
+              <li>HTML5</li>
+              <li>Bootstrap 3 e 4</li>
+              <li>CSS, SCSS, Less, Sass</li>
               <li>Vue (VUE-CLI, Nuxt)</li>
               <li>Conhecimento em React</li>
             </ul>
@@ -58,18 +61,26 @@
         </div>
       </div>
 
-      <div class="col-sm-3 sticky-top">
-        <h3><i class="fas fa-list-alt text-primary"/> Detalhes</h3>
-        <p><i class="fas fa-phone mr-3"/> +55 61 999439193</p>
-        <a class="d-flex align-items-center mb-3" href="mailto:filipebsmonteiro@gmail.com">
-          <i class="fas fa-envelope mr-3"/> filipebsmonteiro@gmail.com
-        </a>
-        <a class="d-flex align-items-center mb-3" href="https://linkedin.com/in/filipebsmonteiro/">
-          <i class="fab fa-linkedin mr-3"/> Linkedin
-        </a>
+      <div class="col-sm-3">
+        <div class="text-center sticky-top bg-white">
+          <b-img v-bind="{ blankColor: '#777', width: 75, height: 75}"
+                 src="/img/core/perfil.jpeg"
+                 rounded="circle"
+                 class="mb-3"/>
+          <h3>Detalhes</h3>
+          <p class="text-muted">
+            Senior Web Developer</p>
+          <p><i class="fas fa-phone mr-3"/> +55 61 999439193</p>
+          <a class="d-block mb-3" href="mailto:filipebsmonteiro@gmail.com">
+            <i class="fas fa-envelope mr-3"/> filipebsmonteiro@gmail.com
+          </a>
+          <a class="mb-3" href="https://linkedin.com/in/filipebsmonteiro/">
+            <i class="fab fa-linkedin mr-3"/> Linkedin
+          </a>
+        </div>
 
         <hr class="mt-5">
-        <h3><i class="fas fa-language text-primary"/> Idiomas</h3>
+        <h3>Idiomas</h3>
         <b-table striped borderless thead-class="d-none" :items="[
             {icon: 'united-kingdom', origin: 'Inglês', level:'(Fluente)'},
             {icon: 'spain', origin: 'Espanhol', level:'(Avançado)'},

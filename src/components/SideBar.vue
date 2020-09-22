@@ -5,10 +5,6 @@
         <div class="nav-link-icon"><i class="fas fa-home"/></div>
         Homepage
       </b-nav-item>
-      <b-nav-item id="sidebar-vns" :to="{ name: 'user.index'}">
-        <div class="nav-link-icon"><i class="fa fa-compact-disc"/></div>
-        Users
-      </b-nav-item>
       <b-nav-item-dropdown menu-class="bg-transparent border-0 p-0 ml-4 position-relative" no-caret>
         <template v-slot:button-content>
           <div class="nav-link-icon"><i class="fa fa-file-alt"/></div>
