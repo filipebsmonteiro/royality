@@ -1,0 +1,34 @@
+@mixin font($font-family, $font-file, $extension) {
+  @font-face {
+    font-family: $font-family;
+
+    @if $extension == 'eot' {
+      src: url($font-file +'.eot');
+      src: url($font-file + '.eot?#iefix') format('embedded-opentype');
+    }
+
+    @if $extension == 'woff' {
+      src: url($font-file + '.woff') format('woff');
+    }
+
+    @if $extension == 'ttf' {
+      src: url($font-file + '.ttf') format('truetype');
+    }
+
+    @if $extension == 'svg' {
+      src: url($font-file + '.svg#aller') format('svg');
+    }
+
+    @if $extension == 'otf' {
+      src: url($font-file + '.otf') format('truetype');
+    }
+
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font('Nunito Sans Light', '~@/assets/vendor/fonts/NunitoSans/NunitoSans-Light', 'ttf');
+@include font('Nunito Sans Bold', '~@/assets/vendor/fonts/NunitoSans/NunitoSans-Bold', 'ttf');
+@include font('Nunito Sans Regular', '~@/assets/vendor/fonts/NunitoSans/NunitoSans-Regular', 'ttf');
+//@include font($secondary-font-custom, '~@/assets/vendor/nucleo/fonts/'+$secondary-font-custom, $secondary-font-extension);
