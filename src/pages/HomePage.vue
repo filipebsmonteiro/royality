@@ -9,12 +9,15 @@
       <b-badge variant="info rounded-pill bounce pulsate-info">Bienvenidos!</b-badge>
       <b-badge variant="danger rounded-pill bounce">Benvenuto!</b-badge>
     </div>
+    <CountDownRounded/>
   </div>
 </template>
 
 <script>
+import CountDownRounded from "@/components/CountDownRounded";
 export default {
   name: "HomePage",
+  components: {CountDownRounded},
 }
 </script>
 
