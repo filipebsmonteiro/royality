@@ -23,6 +23,7 @@ export default new Router({
         },
         ...UserRoutes,
 
+        { path: '/cv/nintendo', name: 'curriculum.nintendo', component: () => import('@/pages/curriculum/nintendo') },
         {
             path: '/cv',
             component: SimpleTopBarLayout,

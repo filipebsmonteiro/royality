@@ -10,6 +10,21 @@
       <b-badge variant="danger rounded-pill bounce">Benvenuto!</b-badge>
     </div>
     <CountDownRounded/>
+
+    <div class="row">
+      <div class="col">
+        <img src="/img/guias/Captura de tela de 2020-10-06 14-30-02.png" class="w-100">
+      </div>
+      <div class="col">
+        <img src="/img/guias/Captura de tela de 2020-10-06 14-30-25.png" class="w-100">
+      </div>
+      <div class="col">
+        <img src="/img/guias/Captura de tela de 2020-10-06 14-30-34.png" class="w-100">
+      </div>
+      <div class="col">
+        <img src="/img/guias/Captura de tela de 2020-10-09 09-01-10.png" class="w-100">
+      </div>
+    </div>
   </div>
 </template>
 

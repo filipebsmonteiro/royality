@@ -1,26 +1,26 @@
 <template>
-  <div class="d-flex align-items-center justify-content-center">
-    <h1 class="mb-0 mr-3">{{ timeLeft }}</h1>
-    <b-button v-if="isCounting" @click="isCounting = !isCounting" variant="outline-secondary" class="mr-1" pill>
-      <i class="fa fa-pause"/></b-button>
-    <b-button
-        v-if="!isCounting"
-        @click="() => {
+  <div class="d-inline-block p-3 overflow-hidden border rounded-circle">
+    <h1 class="m-4">{{ timeLeft }}</h1>
+    <b-button-group class="mt--4 mb--4 ml-auto mr-auto">
+      <b-button v-if="isCounting" @click="isCounting = !isCounting" variant="outline-secondary">
+        <i class="fa fa-pause"/></b-button>
+      <b-button
+          v-if="!isCounting"
+          @click="() => {
                 isCounting = !isCounting
                 timeFuture = Date.now() + (secondsLeft * 1000)
             }"
-        variant="outline-secondary"
-        class="mr-1"
-        pill
-    ><i class="fa fa-play"/></b-button>
-    <b-button @click="countDown(true)" pill variant="outline-secondary" class="mr-1">
-      <i class="fa fa-redo"/>
-    </b-button>
-    <b-dropdown variant="outline-secondary" toggle-class="rounded-pill">
-      <b-dropdown-item v-for="(time, k) in times" :key="k" @click="() => {timeSelected = time.value; countDown()}">
-        {{ time.label }}
-      </b-dropdown-item>
-    </b-dropdown>
+          variant="outline-secondary"
+      ><i class="fa fa-play"/></b-button>
+      <b-button @click="countDown(true)" variant="outline-secondary">
+        <i class="fa fa-redo"/>
+      </b-button>
+      <b-dropdown variant="outline-secondary">
+        <b-dropdown-item v-for="(time, k) in times" :key="k" @click="() => {timeSelected = time.value; countDown()}">
+          {{ time.label }}
+        </b-dropdown-item>
+      </b-dropdown>
+    </b-button-group>
   </div>
 </template>
 
@@ -102,4 +102,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mt--4{
+  margin-top: -1.5rem !important;
+}
+.mb--4{
+  margin-bottom: -1.5rem !important;
+}
 </style>
