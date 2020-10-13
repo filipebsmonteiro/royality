@@ -1,14 +1,14 @@
 <template>
-  <div class="container mt-5 bg-primary">
+  <div class="container mt-5">
     <div class="d-flex">
       <b-input size="lg" class="bg-transparent rounded-20"/>
       <b-button variant="light btn-link" class="align-self-center ml--5" pill><i class="fas fa-search"/></b-button>
     </div>
 
     <div class="d-flex justify-content-around">
-      <IconText icon="calendar-alt" text="25 de Fev."/>
-      <IconText icon="map-marker-alt" text="Rio de Janeiro - BR"/>
-      <IconText icon="graduation-cap" text="Faculdade Projeção"/>
+      <IconText icon="calendar-alt" text="25 de Fev." title/>
+      <IconText icon="map-marker-alt" text="Rio de Janeiro - BR" title/>
+      <IconText icon="graduation-cap" text="Faculdade Projeção" title/>
     </div>
 
     <b-card class="bg-warning p-0 rounded-20" no-body>
@@ -17,6 +17,27 @@
       </b-card-header>
       <p class="p-3">Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem
         ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum </p>
+    </b-card>
+
+    <b-card class="card-avatar text-center rounded-20" no-body>
+      <span class="user-avatar d-flex">
+        <img v-if="false" src="/img/guias/Captura%20de%20tela%20de%202020-10-09%2009-01-10.png" width="150"
+             height="150">
+        <i v-else class="fas fa-user fa-4x m-auto"/>
+      </span>
+      <h1>Super Mario</h1>
+      <p class="mb-0">Encanador - Herói da Princesa</p>
+      <p>Matador de Tartarugas</p>
+      <b-row class="mt-4 mb-4">
+        <b-col>
+          <h3>32,455</h3>
+          <p>Conexões</p>
+        </b-col>
+        <b-col class="border-left">
+          <h3>2,312</h3>
+          <p>Seguidores</p>
+        </b-col>
+      </b-row>
     </b-card>
   </div>
 </template>
@@ -30,12 +51,43 @@ export default {
 }
 </script>
 
-<style scoped>
-::v-deep .bg-warning {
-  background-color: #f7cc00 !important;
+<style lang="scss" scoped>
+.container {
+  background: url("/img/core/nu_bg_pattern.png");
+  min-height: 100vh;
 }
+
+::v-deep .bg-primary {
+  background-color: #0767eb !important;
+  color: #fffdff !important;
+}
+
+::v-deep .bg-warning {
+  background-color: #eecd1f !important;
+  color: #46404a !important;
+}
+
 ::v-deep p {
   font-family: "Nunito Sans Bold";
   color: #858796;
+}
+
+.card-avatar {
+  margin-top: calc(75px + 1em);
+
+  .user-avatar {
+    background-color: #eeeeee;
+    width: 150px;
+    height: 150px;
+    border: #fffdff 5px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -75px auto 1em;
+  }
+
+  h1,h2,h3,h4{
+    font-family: Malvie;
+    color: #858796;
+  }
 }
 </style>
