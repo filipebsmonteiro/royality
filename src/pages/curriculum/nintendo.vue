@@ -1,11 +1,11 @@
 <template>
-  <div class="container mt-5">
-    <div class="d-flex">
+  <div class="container-fluid w-75">
+    <div class="d-flex pt-5 mb-5">
       <b-input size="lg" class="bg-transparent rounded-20"/>
       <b-button variant="light btn-link" class="align-self-center ml--5" pill><i class="fas fa-search"/></b-button>
     </div>
 
-    <div class="d-flex justify-content-around">
+    <div class="d-flex justify-content-around mb-5">
       <IconText icon="calendar-alt" text="25 de Fev." title/>
       <IconText icon="map-marker-alt" text="Rio de Janeiro - BR" title/>
       <IconText icon="graduation-cap" text="Faculdade Projeção" title/>
@@ -19,8 +19,8 @@
         ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum Lorem ipslum </p>
     </b-card>
 
-    <b-card class="card-avatar text-center rounded-20" no-body>
-      <span class="user-avatar d-flex">
+    <b-card class="card-avatar text-center rounded-20 w-25" no-body>
+      <span class="user-avatar d-flex shadow">
         <img v-if="false" src="/img/guias/Captura%20de%20tela%20de%202020-10-09%2009-01-10.png" width="150"
              height="150">
         <i v-else class="fas fa-user fa-4x m-auto"/>
@@ -52,9 +52,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  background: url("/img/core/nu_bg_pattern.png");
+.container-fluid {
+  background: #8dc2f7 url("/img/core/nu_bg_pattern.png");
   min-height: 100vh;
+
+  ::v-deep p {
+    font-family: "Nunito Sans Bold";
+    color: #858796;
+  }
 }
 
 ::v-deep .bg-primary {
@@ -65,11 +70,6 @@ export default {
 ::v-deep .bg-warning {
   background-color: #eecd1f !important;
   color: #46404a !important;
-}
-
-::v-deep p {
-  font-family: "Nunito Sans Bold";
-  color: #858796;
 }
 
 .card-avatar {
@@ -85,7 +85,7 @@ export default {
     margin: -75px auto 1em;
   }
 
-  h1,h2,h3,h4{
+  h1, h2, h3, h4 {
     font-family: Malvie;
     color: #858796;
   }
