@@ -11,6 +11,19 @@
     </div>
     <CountDownRounded/>
 
+    <b-input-group class="rounded-20 border w-25 m-5">
+      <b-dropdown text="Nome" class="" size="sm" variant="link">
+        <b-dropdown-item>Nome</b-dropdown-item>
+        <b-dropdown-item>Empresa</b-dropdown-item>
+        <b-dropdown-item>Integração Origem</b-dropdown-item>
+        <b-dropdown-item>Integração Destino</b-dropdown-item>
+      </b-dropdown>
+      <b-input size="lg" class="border-white shadow-none"/>
+      <b-button variant="light btn-link" class="align-self-center" pill>
+        <i class="fas fa-search"/>
+      </b-button>
+    </b-input-group>
+
     <div class="row">
       <div class="col">
         <img src="/img/guias/Captura de tela de 2020-10-06 14-30-02.png" class="w-100">

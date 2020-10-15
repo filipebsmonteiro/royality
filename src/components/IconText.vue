@@ -1,12 +1,12 @@
 <template>
-  <div class="d-flex">
+  <div class="d-flex align-items-center">
     <i :class="
     'fas fa-' + icon +
     ' border border-'+ iconBorderColor +
     ' bg-'+ iconBgColor +
     ' p-' + iconPadding +
     ' text-'+ iconColor +
-    ' rounded-pill'"/>
+    'd-table rounded-pill'"/>
     <h1 v-if="title" :class="'ml-3 mb-0 text-'+ textColor +' align-self-center'">{{ text }}</h1>
     <p v-else :class="'ml-3 mb-0 text-'+ textColor +' align-self-center'">{{ text }}</p>
   </div>
@@ -55,6 +55,6 @@ export default {
 <style scoped>
   h1{
     font-family: 'Malvie';
-    font-size: 25px;
+    font-size: 20px;
   }
 </style>

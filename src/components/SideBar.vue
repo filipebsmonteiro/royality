@@ -14,6 +14,7 @@
         <b-dropdown-group class="d-flex flex-column position-relative">
           <b-dropdown-item :to="{ name: 'curriculum.ptBR' }">Português</b-dropdown-item>
           <b-dropdown-item :to="{ name: 'curriculum.en' }">English</b-dropdown-item>
+          <b-dropdown-item :to="{ name: 'curriculum.nintendo' }">Nintendo</b-dropdown-item>
         </b-dropdown-group>
       </b-nav-item-dropdown>
     </b-nav>

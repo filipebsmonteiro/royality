@@ -17,6 +17,12 @@ $m-negatives: ("1": "-0.25", "2": "-0.5", "3": "-1", "4": "-1.5", "5": "-3");
   .mb--#{$name} {margin-bottom: #{$measure}rem !important;}
   .ml--#{$name} {margin-left: #{$measure}rem !important;}
   .mr--#{$name} {margin-right: #{$measure}rem !important;}
+
+  .p--#{$name} {margin: #{$measure}rem !important;}
+  .pt--#{$name} {margin-top: #{$measure}rem !important;}
+  .pb--#{$name} {margin-bottom: #{$measure}rem !important;}
+  .pl--#{$name} {margin-left: #{$measure}rem !important;}
+  .pr--#{$name} {margin-right: #{$measure}rem !important;}
 }
 
 .rounded-20{border-radius: 20px !important;}

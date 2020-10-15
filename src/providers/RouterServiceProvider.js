@@ -19,17 +19,20 @@ export default new Router({
             component: CardTopSidebarLayout,
             children: [
                 { path: '/', name: 'homepage', component: () => import('@/pages/HomePage') },
+
+                { path: 'test-resize', name: 'resize.tst', component: () => import('@/pages/EmbedGenerator/PositionAndSize') },
             ]
         },
         ...UserRoutes,
 
-        { path: '/cv/nintendo', name: 'curriculum.nintendo', component: () => import('@/pages/curriculum/nintendo') },
+
         {
             path: '/cv',
             component: SimpleTopBarLayout,
             children: [
                 {path: 'pt-br', name: 'curriculum.ptBR', component: () => import('@/pages/curriculum/ptBR')},
                 {path: 'en', name: 'curriculum.en', component: () => import('@/pages/curriculum/en')},
+                {path: 'nintendo', name: 'curriculum.nintendo', component: () => import('@/pages/curriculum/nintendo') },
             ]
         }
     ]
