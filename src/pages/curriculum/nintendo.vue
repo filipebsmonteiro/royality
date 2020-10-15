@@ -3,12 +3,20 @@
     <div class="container-fluid border w-75 rounded-20 overflow-hidden mt-4 mb-5 shadow">
       <div class="background-main">
         <div class="background-after">
-<!--          <div class="d-flex p-3 w-25">-->
-<!--            <b-input size="lg" class="bg-transparent rounded-20"/>-->
-<!--            <b-button variant="light btn-link" class="align-self-center ml&#45;&#45;5" pill>-->
+
+<!--          <b-input-group class="rounded-20 border w-25 m-5">-->
+<!--            <b-dropdown text="Nome" class="" size="sm" variant="link">-->
+<!--              <b-dropdown-item>Nome</b-dropdown-item>-->
+<!--              <b-dropdown-item>Empresa</b-dropdown-item>-->
+<!--              <b-dropdown-item>Integração Origem</b-dropdown-item>-->
+<!--              <b-dropdown-item>Integração Destino</b-dropdown-item>-->
+<!--            </b-dropdown>-->
+<!--            <b-input size="lg" class="border-0 shadow-none bg-transparent"/>-->
+<!--            <b-button variant="light btn-link" class="align-self-center" pill>-->
 <!--              <i class="fas fa-search"/>-->
 <!--            </b-button>-->
-<!--          </div>-->
+<!--          </b-input-group>-->
+
         </div>
       </div>
 

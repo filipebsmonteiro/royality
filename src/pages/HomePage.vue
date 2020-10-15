@@ -18,7 +18,7 @@
         <b-dropdown-item>Integração Origem</b-dropdown-item>
         <b-dropdown-item>Integração Destino</b-dropdown-item>
       </b-dropdown>
-      <b-input size="lg" class="border-white shadow-none"/>
+      <b-input size="lg" class="border-0 shadow-none bg-transparent"/>
       <b-button variant="light btn-link" class="align-self-center" pill>
         <i class="fas fa-search"/>
       </b-button>
