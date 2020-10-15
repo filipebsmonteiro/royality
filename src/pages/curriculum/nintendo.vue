@@ -38,11 +38,15 @@
             <div class="d-flex justify-content-center mt-4">
               <h3 style="text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);font-family:Malvie;">Emprego Atual</h3>
             </div>
-            <b-card class="rounded-20 border-bottom-larger p-3" no-body>
-              <span class="d-table p-2 bg-warning">
+            <b-card class="rounded-20 border-bottom-larger pl-3 pr-3 pt-1 pb-1 d-flex flex-row justify-content-around align-items-center"
+                    no-body>
+              <span class="d-table">
                 <i class="fas fa-heartbeat fa-2x text-warning"/>
               </span>
-              <h3 class="text-secondary" style="font-family:Malvie;">Veus Techonology</h3>
+              <div>
+                <h4 class="text-secondary mb-0" style="font-family:Malvie;">Veus Techonology</h4>
+                <p class="mb-0">2020 - Atual</p>
+              </div>
             </b-card>
           </div>
         </b-col>
