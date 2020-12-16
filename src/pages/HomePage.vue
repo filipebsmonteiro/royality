@@ -24,6 +24,12 @@
       </b-button>
     </b-input-group>
 
+    <form-group-float-label />
+    <br>
+    <br>
+    <br>
+    <br>
+
     <div class="row">
       <div class="col">
         <img src="/img/guias/Captura de tela de 2020-10-06 14-30-02.png" class="w-100">
@@ -43,9 +49,10 @@
 
 <script>
 import CountDownRounded from "@/components/CountDownRounded";
+import FormGroupFloatLabel from "@/components/form-group-float-label";
 export default {
   name: "HomePage",
-  components: {CountDownRounded},
+  components: {FormGroupFloatLabel, CountDownRounded},
 }
 </script>
 
@@ -112,4 +119,5 @@ export default {
     box-shadow: 0 0 4px 4px #4fc3f7;
   }
 }
+
 </style>
