@@ -24,7 +24,8 @@
       </b-button>
     </b-input-group>
 
-    <form-group-float-label />
+    <form-group-float-label label="Name" input-name="candidate" />
+    <form-group-float-label label="Surname" input-name="candidateSurname" />
     <br>
     <br>
     <br>

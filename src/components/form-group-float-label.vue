@@ -1,11 +1,7 @@
 <template>
-<!--  <div class="label-float">-->
-<!--    <label>{{ label }}</label>-->
-<!--    <slot />-->
-<!--  </div>-->
   <div class="label-float">
-    <b-input type="text" id="candidateName" name="candidateName" placeholder=" "/>
-    <label for="candidateName">Candidate name</label>
+    <b-input :type="inputType" :id="inputName" :name="inputName" placeholder=" "/>
+    <label :for="inputName">{{ label }}</label>
   </div>
 </template>
 
@@ -13,9 +9,16 @@
 export default {
   name: "form-group-float-label",
   props: {
+    inputName: {
+      type: String
+    },
     label: {
       type: String,
       default: ''
+    },
+    inputType: {
+      type: String,
+      default: 'text'
     }
   }
 }
@@ -37,6 +40,8 @@ export default {
   opacity:1;
   transform: scale(.9) translateY(-55%) translateX(-0.375rem);
   background-color: white;
+  padding: 0rem 0.5rem;
+  margin: 0 0 0 10px;
 }
 .label-float input:focus{
   outline:none !important;
@@ -44,6 +49,7 @@ export default {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
+  color: #6e707e;
 }
 .label-float{
   padding: 15px;
